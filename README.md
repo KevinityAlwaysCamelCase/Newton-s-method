@@ -1,2 +1,5 @@
-# Newton-s-method
-This is a way of approximating the position of a zero in a polynomial, widely used for degree three or higher
+# Newton's-method
+This is a way of approximating the position of a zero in a polynomial, widely used for degree three or higher.
+It is did using an initial prediction $z_0$, then we predict where would be the zero by taking its derivative and setting it to zero, for a polynomial P(x) we have thus a recursion relation for a sequence $z_n$ that converges to one of the closest zero around it defined as following:<br> $z_{n+1}=z_n - \frac{P(z_n)}{P'(z_n)}$.<br>
+This method later leads to a fractal called <it>Newton's fractal<\it> that is connected to the <it>Mandelbrot set<\it> which is a very important fractal that occurs when trying to find the points where the zero is never found.<br>
+note: here we are denoting $z$ as our input because it can be a complex number, from this we can find a solution to the polynomial equation "$x^2 + x + 1 = 0$" where the result is complex, however the code is not adapted to complex numbers and may not find solutions due to the fact that the sofware is not adapted to complex numbers
